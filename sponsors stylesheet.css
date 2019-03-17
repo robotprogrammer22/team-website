@@ -3,3 +3,30 @@ section.sponsors{
 	grid-column-gap: 50px;
 	grid-row-gap: 50px;
 }
+
+img.photo{
+	grid-row: 1;
+}
+
+	<link href="../stylesheet.css" rel="stylesheet" type="text/css" />
+
+	<style type="text/css">
+	.auto-style2 {
+		background-color: #333333;
+		color: #F3BB00;
+		font-size: large;
+	}
+	.auto-style3 {
+		text-decoration: underline;
+	}
+.auto-style4 {
+	text-align: center;
+}
+.auto-style5 {
+	text-align: left;
+}
+.auto-style6 {
+	text-align: left;
+	color: #FFFF00;
+	font-size: large;
+}
