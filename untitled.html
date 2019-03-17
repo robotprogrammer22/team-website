@@ -1,10 +1,138 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+    <meta charset="utf-8">
+    <title>Team 60</title>
+    <meta name="viewport" content="initial-scale=1">
 </head>
 
 <body>
+    <style>
+        /* mobile first */
+        body {margin: 0;}
+        nav {
+            display: flex;
+            flex-direction: column;
+            position: sticky;
+            top: 0;
+        }
+        #mobileBar {
+            display: flex;
+        }
+        nav > ul {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            padding: 0;
+        } 
+        nav.collapsed > ul {display: none;}
+        nav > ul > li {
+            flex: 1;
+            text-align: center;
+            background-color: aliceblue;
+            color: black;
+        }
+        /* #hamburgerButton {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+        } */
+
+        @media only screen and (min-width: 600px) {
+            nav.collapsed > ul {display: flex}
+            nav > ul {
+                flex-direction: row;
+            }
+            #mobileBar {
+                display: none;
+            }
+        }
+
+    </style>
+    <header>
+         <!-- <img src="#" alt="logo"> -->
+        <nav id="mainNav">
+            <div id="mobileBar"><span>Team 60</span><span id="hamburgerButton">=</span></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">What is FIRST?</a></li>
+                <li><a href="#">Sponsors</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <article>
+        <p><pre>
+            fdsalkj
+            a
+
+
+            fdsfg
+
+            sfg
+
+                asf
+
+
+sdfaf
+fsdfsa
+
+fsa
+
+
+
+fsadfafdsa
+
+
+hdfgh
+
+
+knaklsklfd
+
+lkafsjdklf
+lkj;
+
+
+
+afdd
+
+
+j
+dfj
+dj
+dfj
+
+
+dfhd
+
+
+djffd
+
+dfh
+dhg
+lh
+hjkh
+
+ghgfgs      hfdfg
+                gfdsgfsdhsd
+
+                gdsgdgffsd
+            </pre>
+
+        </p>
+    </article>
+
+    <script>
+        const mainNave = document.getElementById("#mainNav");
+        mainNav.classList.toggle('collapsed');
+
+        const hamburgerButton = document.getElementById("hamburgerButton");
+        hamburgerButton.addEventListener('click', function () {
+            console.log("clicked menu");
+            mainNav.classList.toggle('collapsed');
+        });
+
+    </script>
 </body>
 </html>
