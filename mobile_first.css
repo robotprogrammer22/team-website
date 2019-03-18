@@ -1,0 +1,88 @@
+* {margin: 0; padding: 0;box-sizing: border-box;}
+/* mobile first css*/
+header.main {
+    width: 100%;
+    text-align: center;
+}
+header.main img {
+    width: inherit;
+    max-width: 800px;
+}
+nav {
+    position: sticky;
+    top: -1px; 
+    margin-top: -4px;/*something wierd with having picture above*/
+    /* background-color: #5066e4; */
+    background-color: #FC0;
+    text-align: center;
+    user-select: none;
+}
+#mobileBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+}
+#hamburgerButton {
+    text-decoration: none;
+    width: 2rem;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#hamburgerButton:hover {
+    /* background-color: #32408f; */
+    background-color: #e0b300;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+} 
+nav.collapsed ul {
+    display: none;
+}
+nav li {
+    flex: 1;
+}
+nav li a:hover {
+    /* background-color: #32408f; */
+    background-color: #e0b300;
+}
+nav li a {
+    width: 100%;
+    height: 2rem;            
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+article {
+    background-color: whitesmoke;
+    padding: 2rem;
+    margin: auto;
+    text-align: start;
+    line-height: 2;
+}
+article p {text-indent: 3rem;}
+body {
+    /* text-align: center; */
+    background-color: #32408f;
+}
+
+
+/*then we progressively change it to work better for larger screens*/
+@media only screen and (min-width: 600px) {
+    header.main img {max-width: 800px;}
+    nav.collapsed ul {display: flex;}
+    nav ul {flex-direction: row;}
+    #mobileBar {display: none;}
+    article {
+        max-width: 800px;
+    }
+}
