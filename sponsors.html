@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Team 60 - Bionic Bulldogs</title>
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="icon" href="bulldog-icon-32x32.png" />
+    <link rel="stylesheet" href="mobile_first.css" />
+
+    <!-- this sets tab color in android chrome -->
+    <meta name="theme-color" content="#e0b300" />
+    <style>
+      h2 {
+        text-align: center;
+      }
+        ul.business-sponsors {
+            font-size: 2em;
+            list-style-type: none;
+            text-align: center;
+        }
+        ul.business-sponsors li {
+            border-width: 4px;
+            border-color: black;
+        }
+    
+    
+    
+    </style>
+  </head>
+
+  <body>
+    <header class="main">
+      <img src="team-picture2019.jpg" alt="a picture of the team" />
+    </header>
+
+    <nav id="mainNav">
+      <div id="mobileBar">
+        <a href="index.html"
+          ><img height="32" src="bulldog-icon-32x32.png" alt="home"
+        /></a>
+        <span>FRC Team 60</span>
+        <span id="hamburgerButton">&#9776;</span>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-first.html">What is FIRST?</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h1>Sponsors</h1>
+      <p>
+        Team 60 has built great relationships with many local businesses. Our
+        community, though small, has a generous heart and supportive nature.
+        Each year, donations of time and money enable our continued existence.
+        The majority of our funding is tax credit donations from local
+        businesses and individuals. Several companies also donate time,
+        equipment, and other resources to our team. 
+        
+      </p>
+      <p>
+        We proudly share the logo of each business sponsoring us. By putting their name on our robot, we show our gratitude and provide value in advertising to our sponsors. And after high school, some students become employees of these companies through apprenticeship programs. This benefits everyone. 
+      </p>
+
+      <!-- Tax Credit forms -->
+      <h2>Our thanks to those who supported us this year!</h2>
+      
+      <ul class='business-sponsors'>
+        <li>Praxair</li>
+        <li>Bracket Aircraft</li>
+        <li>West Coast Netting</li>
+        <li>Purvis Industries</li>
+        <li>Cascades Tissue Group</li>
+        <li>I Corp</li>
+        <li>Freiday Construction</li>
+        <li>Soroptimist of Kingman</li>
+        <li>Sutton Funeral Home</li>
+        <li>Unisource Energy</li>
+        <li>True Value Hardware</li>
+        <li>American Woodmark</li>
+        <li>CallCenterUSA</li>
+      </ul>
+
+
+      
+
+      <pre>
+
+
+
+
+
+
+
+
+
+        </pre
+      >
+    </article>
+
+    <script>
+      const mainNave = document.getElementById("#mainNav");
+      mainNav.classList.toggle("collapsed");
+
+      const hamburgerButton = document.getElementById("hamburgerButton");
+      hamburgerButton.addEventListener("click", function() {
+        console.log("clicked menu");
+        mainNav.classList.toggle("collapsed");
+      });
+    </script>
+  </body>
+</html>

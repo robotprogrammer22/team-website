@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Team 60 - Bionic Bulldogs</title>
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="icon" href="bulldog-icon-32x32.png" />
+    <link rel="stylesheet" href="mobile_first.css" />
+
+    <!-- used to set tab color in android chrome -->
+    <meta name="theme-color" content="#e0b300" />
+  </head>
+
+  <body>
+    <header class="main">
+      <img src="team-picture2019.jpg" alt="a picture of the team" />
+    </header>
+
+    <nav id="mainNav">
+      <div id="mobileBar">
+        <a href="index.html"
+          ><img height="32" src="bulldog-icon-32x32.png" alt="home"
+        /></a>
+        <span>FRC Team 60</span>
+        <span id="hamburgerButton">&#9776;</span>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-first.html">What is FIRST?</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+
+    <article>
+        <h1>What is FIRST?</h1>
+        <p>For Inspiration and Recognition of Science and Technology, FIRST is a portal for K-12 students allowing exploration of the STEM world. It helps us find what we like to do. Each year there is a new game and new robots to build. But FIRST is more than robots. It is about becoming a better person and learning valuable life skills such as teamwork, Gracious Professionalism and Coopertition. FIRST is where ingenuity and intellect meet to create the hardest fun ever.</p>
+        <a href="https://www.firstinspires.org/about/vision-and-mission">FIRST Vison and Mission Statement</a>
+        <h1>What is FRC?</h1>
+        <p>FIRST Robotics Competition is the program for high school students. With strict rules, limited resources, and an intense schedule, we create and program industrial sized robots for each years game. The robot is bigger, playing field larger, and the competition fierce. </p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hgMebpFuKhY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            </pre>
+
+        
+    </article>
+
+    <script>
+        const mainNave = document.getElementById("#mainNav");
+        mainNav.classList.toggle('collapsed');
+
+        const hamburgerButton = document.getElementById("hamburgerButton");
+        hamburgerButton.addEventListener('click', function () {
+            console.log("clicked menu");
+            mainNav.classList.toggle('collapsed');
+        });
+
+    </script>
+</body>
+</html>

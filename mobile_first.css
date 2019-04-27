@@ -11,7 +11,7 @@ header.main img {
 nav {
     position: sticky;
     top: -1px; 
-    margin-top: -5px;/*something wierd with having picture above*/
+    margin-top: -5px;/*something weird with having picture above*/
     /* background-color: #5066e4; */
     background-color: #FC0;
     text-align: center;
@@ -73,6 +73,7 @@ article p {text-indent: 3rem;}
 body {
     /* text-align: center; */
     background-color: #32408f;
+    padding-bottom: 5em;
 }
 
 
