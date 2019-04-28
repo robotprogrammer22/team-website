@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Team 60 - Bionic Bulldogs</title>
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="icon" href="../../bulldog-icon-32x32.png" />
+    <link rel="stylesheet" href="../../mobile_first.css" />
+
+    <!-- used to set tab color in android chrome -->
+    <meta name="theme-color" content="#e0b300" />
+  </head>
+  <!-- this is should only be different from the main template in removing the big picture up top of the current years team -->
+  <body>
+    <nav id="mainNav">
+      <div id="mobileBar">
+        <a href="../../index.html"
+          ><img height="32" src="../../bulldog-icon-32x32.png" alt="home"
+        /></a>
+        <span>FRC Team 60</span>
+        <span id="hamburgerButton">&#9776;</span>
+      </div>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../about-first.html">What is FIRST?</a></li>
+        <li><a href="../../sponsors.html">Sponsors</a></li>
+        <li><a href="../../history.html">History</a></li>
+        <li><a href="../../resources.html">Resources</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <!-- put main content in here -->
+
+      <p>
+        1998 was the second year for Team 60. The Kingman High School robotics
+        club increased in size to 37 students traveling. Teacher Adam Sears was
+        the coach of the team. Glenn Thoroughman and others from Laron
+        Engineering provided mentoring for the team.
+      </p>
+
+      <p>
+        Team 60 competed at the World Championship at Walt Disney World Epcot
+        Center in Orlando Florida. The team and their “bionic bulldog” robot
+        performed well and placed 41st in the seeding matches among over 100
+        other teams.
+      </p>
+
+      <p>
+        The Ladder Logic competition was played with three teams at a time on a
+        hexagon shaped field. In two minutes matches, the three robots and human
+        players scored points by placing the balls onto the side goals or into
+        the central goal. The color-coding of the balls was used to identify
+        team ownership. A human player, located outside the perimeter of the
+        field, was allowed to hand balls to the robot or throw balls directly at
+        the goals.
+      </p>
+
+      <img alt="newspaper clipping" src="./Kingman Daily Miner 1998 04 09.png" width="1748" height="1244"/>
+    </article>
+
+    <script>
+      const mainNave = document.getElementById("#mainNav");
+      mainNav.classList.toggle("collapsed");
+
+      const hamburgerButton = document.getElementById("hamburgerButton");
+      hamburgerButton.addEventListener("click", function() {
+        console.log("clicked menu");
+        mainNav.classList.toggle("collapsed");
+      });
+    </script>
+  </body>
+</html>
