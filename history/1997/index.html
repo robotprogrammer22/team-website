@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Team 60 - Bionic Bulldogs</title>
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="icon" href="../../bulldog-icon-32x32.png" />
+    <link rel="stylesheet" href="../../mobile_first.css" />
+
+    <!-- used to set tab color in android chrome -->
+    <meta name="theme-color" content="#e0b300" />
+  </head>
+
+  <body>
+    <nav id="mainNav">
+      <div id="mobileBar">
+        <a href="../../index.html"
+          ><img height="32" src="../../bulldog-icon-32x32.png" alt="home"
+        /></a>
+        <span>FRC Team 60</span>
+        <span id="hamburgerButton">&#9776;</span>
+      </div>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../about-first.html">What is FIRST?</a></li>
+        <li><a href="../../sponsors.html">Sponsors</a></li>
+        <li><a href="../../history.html">History</a></li>
+        <li><a href="../../resources.html">Resources</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <p>
+        Adam Sears, a chemistry teacher at Kingman High School, lead Team 60 in
+        it's rookie year of 1997. Nineteen students were on the team. Two
+        employees from Ford Motor Company helped mentor the students.
+      </p>
+      <img src="./picture1.png" alt="robot picture" width="480" height="360" />
+      <img
+        src="./picture2-side-profile.png"
+        alt="robot picture"
+        width="480"
+        height="360"
+      />
+      <p>
+        Team 60 competed at the National Championship held at the Walt Disney
+        World Epcot Center in Orlando Florida. The team placed near the bottom
+        in the rankings.
+      </p>
+
+      <p>
+        The Toroid Terror competition was played with three teams at a time on a
+        hexagon shaped field. In two minute matches, three robots and human
+        players scored points by placing the inner tubes onto pegs in the goal,
+        or around the top of the goal. The tubes were color-coded to identify
+        team ownership. Human players were not allowed onto the field, but they
+        were allowed to hand tubes to the robots or throw tubes directly onto
+        the goal.
+      </p>
+
+      <p>
+        Major sponsors included the Mohave Generating Station and Ford Motor
+        Company. The students also raised money through car washes held at Taco
+        Bell.
+      </p>
+    </article>
+
+    <script>
+      const mainNave = document.getElementById("#mainNav");
+      mainNav.classList.toggle("collapsed");
+
+      const hamburgerButton = document.getElementById("hamburgerButton");
+      hamburgerButton.addEventListener("click", function() {
+        console.log("clicked menu");
+        mainNav.classList.toggle("collapsed");
+      });
+    </script>
+  </body>
+</html>

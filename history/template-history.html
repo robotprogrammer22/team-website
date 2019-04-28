@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Team 60 - Bionic Bulldogs</title>
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="icon" href="../../bulldog-icon-32x32.png" />
+    <link rel="stylesheet" href="../../mobile_first.css" />
+
+    <!-- used to set tab color in android chrome -->
+    <meta name="theme-color" content="#e0b300" />
+  </head>
+<!-- this is should only be different from the main template in removing the big picture up top of the current years team -->
+  <body>
+    <nav id="mainNav">
+      <div id="mobileBar">
+        <a href="../../index.html"
+          ><img height="32" src="../../bulldog-icon-32x32.png" alt="home"
+        /></a>
+        <span>FRC Team 60</span>
+        <span id="hamburgerButton">&#9776;</span>
+      </div>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../about-first.html">What is FIRST?</a></li>
+        <li><a href="../../sponsors.html">Sponsors</a></li>
+        <li><a href="../../history.html">History</a></li>
+        <li><a href="../../resources.html">Resources</a></li>
+      </ul>
+    </nav>
+
+    <article>
+        <!-- put main content in here -->
+
+
+
+
+
+    </article>
+
+    <script>
+      const mainNave = document.getElementById("#mainNav");
+      mainNav.classList.toggle("collapsed");
+
+      const hamburgerButton = document.getElementById("hamburgerButton");
+      hamburgerButton.addEventListener("click", function() {
+        console.log("clicked menu");
+        mainNav.classList.toggle("collapsed");
+      });
+    </script>
+  </body>
+</html>
