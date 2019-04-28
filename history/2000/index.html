@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Team 60 - Bionic Bulldogs</title>
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="icon" href="../../bulldog-icon-32x32.png" />
+    <link rel="stylesheet" href="../../mobile_first.css" />
+
+    <!-- used to set tab color in android chrome -->
+    <meta name="theme-color" content="#e0b300" />
+  </head>
+  <!-- this is should only be different from the main template in removing the big picture up top of the current years team -->
+  <body>
+    <nav id="mainNav">
+      <div id="mobileBar">
+        <a href="../../index.html"
+          ><img height="32" src="../../bulldog-icon-32x32.png" alt="home"
+        /></a>
+        <span>FRC Team 60</span>
+        <span id="hamburgerButton">&#9776;</span>
+      </div>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../about-first.html">What is FIRST?</a></li>
+        <li><a href="../../sponsors.html">Sponsors</a></li>
+        <li><a href="../../history.html">History</a></li>
+        <li><a href="../../resources.html">Resources</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <!-- put main content in here -->
+      <p>
+        The year 2000 was a remarkable year for Team 60. At the NASA Ames
+        Regional in California, the team outperformed all the other teams during
+        qualification matches to become the #1 seed for playoffs. Team 60 then
+        went on to win the Regional where about 40 teams competed. Alliance
+        members included The Cheesy Poofs(254) and Team 409. Team 60 also
+        received the Quality Award at the regional.
+      </p>
+
+      <p>
+        At the National Championship in Orlando Florida, Team 60 continued to
+        perform well and earned the #5 seed for playoffs out of 250 teams.
+      </p>
+
+      <p>
+        In the competition game “Co-opertition FIRST”, four teams, paired in two
+        alliances, will compete in each match. An alliance scores points by
+        placing balls in their goal, and by positioning their robots in
+        designated areas at the end of each match. At the start of a match each
+        alliance has seven yellow balls and one black ball in their station. In
+        addition, there are fifteen yellow balls and two black balls on the far
+        side of the field which may be scored by either alliance.
+      </p>
+      <img alt="robot" src="./Kingman Daily Miner 2000 02 07.png" width="788" height="1012" />
+    </article>
+
+    <script>
+      const mainNave = document.getElementById("#mainNav");
+      mainNav.classList.toggle("collapsed");
+
+      const hamburgerButton = document.getElementById("hamburgerButton");
+      hamburgerButton.addEventListener("click", function() {
+        console.log("clicked menu");
+        mainNav.classList.toggle("collapsed");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Team 60 - Bionic Bulldogs</title>
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="icon" href="../../bulldog-icon-32x32.png" />
+    <link rel="stylesheet" href="../../mobile_first.css" />
+
+    <!-- used to set tab color in android chrome -->
+    <meta name="theme-color" content="#e0b300" />
+  </head>
+  <!-- this is should only be different from the main template in removing the big picture up top of the current years team -->
+  <body>
+    <nav id="mainNav">
+      <div id="mobileBar">
+        <a href="../../index.html"
+          ><img height="32" src="../../bulldog-icon-32x32.png" alt="home"
+        /></a>
+        <span>FRC Team 60</span>
+        <span id="hamburgerButton">&#9776;</span>
+      </div>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../about-first.html">What is FIRST?</a></li>
+        <li><a href="../../sponsors.html">Sponsors</a></li>
+        <li><a href="../../history.html">History</a></li>
+        <li><a href="../../resources.html">Resources</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <!-- put main content in here -->
+
+      <p>
+        In 1999, Team 60 played at two events. At the NASA Ames Regional at
+        Moffet Field in California, Team 60 received the “Most Photogenic”
+        award. They later traveled to Orlando Florida and competed at the
+        National Championship where they placed 86th.
+      </p>
+
+      <p>
+        The competition “Double Trouble” was played by two alliances at a time,
+        with each alliance composed of two teams. Points were scored by
+        positioning “floppies,” robots, and the “puck” on the playing field.
+        Floppies are lightweight, pillow-like objects with Velcro-loop material
+        located in the center and around the perimeter. Each alliance has ten
+        color coded floppies located on the playing field and at the player
+        stations. At the end of each two minute match, points were awarded as
+        follows: Each two-team alliance receives one point for each of its
+        floppies that is at least 2” over and not touching the playing field
+        surface, and less than eight feet above the surface if the playing
+        field. Each alliance receives three points for each of its floppies
+        eight feet or higher over the surface of the playing field. Any robot
+        that climbs onto the puck will multiply its alliance’s score by three.
+      </p>
+    </article>
+
+    <script>
+      const mainNave = document.getElementById("#mainNav");
+      mainNav.classList.toggle("collapsed");
+
+      const hamburgerButton = document.getElementById("hamburgerButton");
+      hamburgerButton.addEventListener("click", function() {
+        console.log("clicked menu");
+        mainNav.classList.toggle("collapsed");
+      });
+    </script>
+  </body>
+</html>
