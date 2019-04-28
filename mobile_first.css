@@ -76,6 +76,10 @@ body {
     padding-bottom: 5em;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /*then we progressively change it to work better for larger screens*/
 @media only screen and (min-width: 600px) {
