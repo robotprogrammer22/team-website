@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Team 60 - Bionic Bulldogs</title>
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="icon" href="../../bulldog-icon-32x32.png" />
+    <link rel="stylesheet" href="../../mobile_first.css" />
+
+    <!-- used to set tab color in android chrome -->
+    <meta name="theme-color" content="#e0b300" />
+  </head>
+  <body>
+
+      <header class="main">
+          <img src="maxresdefault.jpg" alt="this years logo" />
+        </header>
+
+    <nav id="mainNav">
+      <div id="mobileBar">
+        <a href="../../index.html"
+          ><img height="32" src="../../bulldog-icon-32x32.png" alt="home"
+        /></a>
+        <span>FRC Team 60</span>
+        <span id="hamburgerButton">&#9776;</span>
+      </div>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../sponsors.html">Sponsors</a></li>
+        <li><a href="../../history.html">History</a></li>
+        <li><a href="../../resources.html">Resources</a></li>
+      </ul>
+    </nav>
+
+    <article>
+        <!-- put main content in here -->
+
+        <p>We named our robot HAL after the computer in 2001: A Space Odyssey. It seemed fitting with the year’s game of Deep Space. Team 60 competed in two regional events. At the Arizona North Regional we finished qualification matches with a rank of 33. We were chosen by the seventh seed alliance to play defense in playoffs. This alliance upset several teams through quarter and semifinals until we finished as runner up. At the second competition in Las Vegas we were invited to the eighth seed alliance. We had again demonstrated a stellar defense playing against the top teams.</p>
+
+        <p>Our mentor Celeste Lucier was selected for the Woodie Flowers Finalist Award. She has volunteered with our team since 2010. In addition to mentoring FRC, she has also coached teams at the FTC and FLL levels. This year, both the FTC and FLL teams she led qualified for state. Mrs. Lucier loves her students and dedicates countless hours helping us become all we can. </p>
+
+        <img src="hal.jpg" alt="robot" width="956" height="1024" />
+        <img src="celesteAndJody.jpg" alt="celeste with award" width="768" height="960" />
+        <img src="team-picture2019.jpg" alt="team picture" width="1740" height="968" />
+
+
+
+
+    </article>
+
+    <script>
+      const mainNave = document.getElementById("#mainNav");
+      mainNav.classList.toggle("collapsed");
+
+      const hamburgerButton = document.getElementById("hamburgerButton");
+      hamburgerButton.addEventListener("click", function() {
+        console.log("clicked menu");
+        mainNav.classList.toggle("collapsed");
+      });
+    </script>
+  </body>
+</html>
